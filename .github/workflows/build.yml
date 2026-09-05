@@ -89,7 +89,7 @@ jobs:
           ./gradlew :app:assembleDebug --no-daemon
 
       - name: Rename Release APK
-        run: mv app/build/outputs/apk/Debug/*.apk GhostLock-release.apk
+        run: mv app/build/outputs/apk/debug/*.apk GhostLock-release.apk
 
       - name: Upload Release APK
         uses: actions/upload-artifact@v7
