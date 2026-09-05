@@ -86,7 +86,7 @@ jobs:
           export KEYSTORE_PASS="${{ secrets.KEY_STORE_PASSWORD }}"
           export KEY_ALIAS="${{ secrets.ALIAS }}"
           export KEY_PASSWORD="${{ secrets.KEY_PASSWORD }}"
-          ./gradlew :app:assembleDebug --no-daemon
+          ./gradlew :app:assembledebug --no-daemon
 
       - name: Rename Release APK
         run: mv app/build/outputs/apk/debug/*.apk GhostLock-release.apk
